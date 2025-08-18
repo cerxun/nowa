@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма редактирования профиля клиента - юр лица</title>
+  <link rel="stylesheet" href="form-yurik.css">
+</head>
+<body>
+  <form class="profile-form">
+    <h2 class="form-title">Форма редактирования профиля клиента</h2>
+
+    <div class="toggle-buttons">
+      <button type="button" class="toggle-btn">ФИЗИЧЕСКОЕ ЛИЦО</button>
+      <button type="button" class="toggle-btn active">ЮРИДИЧЕСКОЕ ЛИЦО</button>
+    </div>
+
+    <input type="text" placeholder="Организация*" required>
+    <input type="text" placeholder="Улица*" required>
+    <input type="text" placeholder="Дом*" required>
+    <input type="text" placeholder="Корпус*">
+    <input type="text" placeholder="Подъезд">
+    <input type="text" placeholder="Этаж">
+    <input type="text" placeholder="Офис, помещение">
+    <input type="tel" placeholder="+375(__)___-__-__ *" required pattern="^\+375\(\d{2}\)\d{3}-\d{2}-\d{2}$">
+
+    <label class="checkbox-label">
+      <input type="checkbox" required>
+      Даю согласие на обработку персональных данных
+    </label>
+
+    <button type="submit" class="submit-btn">РЕДАКТИРОВАТЬ/СОХРАНИТЬ ПРОФИЛЬ</button>
+  </form>
+</body>
+</html>
+
