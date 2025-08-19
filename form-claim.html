@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жалоба директору</title>
+    <link rel="stylesheet" href="claim.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="form-container">
+        <form action="#" method="post">
+            <h2>Жалоба директору</h2>
+
+            <div class="form-group">
+                <label for="full-name">Ваше ФИО</label>
+                <input type="text" id="full-name" name="full_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Ваш Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="complaint-text">Текст жалобы</label>
+                <textarea id="complaint-text" name="complaint_text" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+</body>
+</html>

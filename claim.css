@@ -1,0 +1,89 @@
+/* Общие стили для страницы */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    font-family: 'Inter', sans-serif; /* Современный шрифт, как часто бывает в Figma */
+}
+
+/* Контейнер формы, стилизованный по вашему SVG */
+.form-container {
+    background-color: #ffffff;
+    width: 580px;
+    padding: 40px 52px; /* Отступы по бокам как в макете */
+    border-radius: 10px; /* Из SVG: rx="10" */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Тень, как у фильтра в SVG */
+    box-sizing: border-box;
+}
+
+/* Заголовок формы */
+h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Группа "метка + поле ввода" */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Стили для меток (названий полей) */
+label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Общие стили для полей ввода и текстовой области */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* Чтобы padding не влиял на общую ширину */
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Убираем возможность изменять размер текстового поля по горизонтали */
+textarea {
+    resize: vertical;
+}
+
+/* Эффект при фокусе на поле ввода */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #094672;
+    box-shadow: 0 0 0 3px rgba(9, 70, 114, 0.2);
+}
+
+/* Кнопка "Отправить" */
+button {
+    width: 100%;
+    height: 60px; /* Из SVG: height="60.1053" */
+    background-color: #094672; /* Из SVG: fill="#094672" */
+    color: white;
+    border: none;
+    border-radius: 10px; /* Из SVG: rx="10" */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px; /* Отступ сверху от последнего поля */
+    transition: background-color 0.3s;
+}
+
+/* Эффект при наведении на кнопку */
+button:hover {
+    background-color: #0c5a91; /* Чуть более светлый оттенок для интерактивности */
+}
