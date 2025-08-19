@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Корзина заказа воды</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+  <section class="cart-block">
+    <div class="cart-time-block">
+      <div class="cart-time-header">
+        <span class="cart-time-title">Когда доставить воду?</span>
+        <span class="cart-time-arrow">&#9660;</span>
+      </div>
+      <div class="cart-time-detail">
+        <a href="#" class="cart-time-link">Ближайшая сегодня 9:00-12:00</a>
+      </div>
+    </div>
+
+    <label class="cart-express-label">
+      <input type="checkbox" class="cart-express-checkbox">
+      ЭКСПРЕСС-ДОСТАВКА
+    </label>
+
+    <div class="cart-products">
+      <div class="cart-product">
+        <img src="bottle2.png" alt="Вода 19 л" />
+        <div class="cart-product-info">
+          <div class="cart-product-title">Питьевая вода<br>негазированная 19 л</div>
+          <div class="cart-product-qty">
+            <button class="qty-btn">-</button>
+            <span>0</span>
+            <button class="qty-btn">+</button>
+          </div>
+          <div class="cart-product-note">бутыль на возврат</div>
+        </div>
+      </div>
+      <div class="cart-product">
+        <img src="bottle2.svg" alt="Вода 19 л" />
+        <div class="cart-product-info">
+          <div class="cart-product-title">Питьевая вода<br>негазированная 19 л</div>
+          <div class="cart-product-qty">
+            <button class="qty-btn">-</button>
+            <span>0</span>
+            <button class="qty-btn">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="cart-product">
+        <img src="bottle3.svg" alt="Вода 19 л" />
+        <div class="cart-product-info">
+          <div class="cart-product-title">Питьевая вода<br>негазированная 19 л</div>
+          <div class="cart-product-qty">
+            <button class="qty-btn">-</button>
+            <span>0</span>
+            <button class="qty-btn">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="cart-product">
+        <img src="bottle4.svg" alt="Вода 19 л" />
+        <div class="cart-product-info">
+          <div class="cart-product-title">Питьевая вода<br>негазированная 19 л</div>
+          <div class="cart-product-qty">
+            <button class="qty-btn">-</button>
+            <span>0</span>
+            <button class="qty-btn">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <textarea class="cart-comment" placeholder="Комментарий к заказу"></textarea>
+
+    <div class="cart-address-box">
+      <span class="cart-address">Лынькова 123, кв. 2</span>
+      <button class="cart-btn cart-btn-delete" title="Удалить адрес">&#10060;</button>
+      <button class="cart-btn cart-btn-edit" title="Редактировать">&#9998;</button>
+      <button class="cart-btn cart-btn-map" title="Карта">&#128205;</button>
+    </div>
+    <div class="cart-address-links">
+      <a href="#" class="cart-add-address">ДОБАВИТЬ НОВЫЙ АДРЕС?</a>
+      <button class="cart-btn cart-btn-profile">Удалить профиль</button>
+    </div>
+
+    <div class="cart-payment-block">
+      <div class="cart-payment-header">
+        <span>СПОСОБЫ ОПЛАТЫ</span>
+        <span class="cart-payment-arrow">&#9660;</span>
+        <button class="cart-btn cart-btn-close" title="Закрыть">&#10006;</button>
+      </div>
+    </div>
+
+    <button class="cart-submit-btn">ПОДТВЕРДИТЬ ЗАКАЗ</button>
+  </section>
+</body>
+</html>
